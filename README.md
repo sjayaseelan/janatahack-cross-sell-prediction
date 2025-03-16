@@ -1,44 +1,90 @@
-# janatahack-cross-sell-prediction
+# JanataHack Cross-Sell Prediction
+
 This repository explores data analysis and machine learning techniques to predict customer interest. Specifically, it focuses on identifying whether a customer is likely to be interested in vehicle insurance based on historical data.
 
 ## Dataset
-The Customer Dataset taken from the hackathon site. The dataset contains customer details along with their vehicle and policy information. The dataset includes features like:
- Customer ID: Unique identifier for each customer
- Customer Demographics: Age, gender, region, etc.
- Vehicle Details: Vehicle age, damage, etc.
- Policy Details: Premium, sourcing channel, etc.
- Response: Target variable indicating whether the customer is interested in the
-policy or not.
-  
-Step-by-Step Instructions
- Data understanding and observations
-Import Libraries, Load Data, Initial Exploration, etc.
- Exploratory Data Analysis (EDA)
-Visualize Distributions, Univariate Analysis, Bivariate Analysis, etc.
- Data Cleaning
-Check and Handling Missing values, Outlier Detection, Convert data types (if necessary), etc.
- Feature Engineering
-Encoding Categorical Data, Feature Scaling Numerical Data, Create New Features from existing columns, etc.
- Model Building
-Train-Test Split, Modeling using Pipelining, Ensemble Techniques, Model Training and Prediction.
- Model Evaluation and Tuning
-Evaluate Model Performance using Metrics specified (roc_auc_score) in the hackathon site, Optimize model by Hyperparameter Tuning using GridSearch or others, and Compare Models.
- Evaluate Test solution
-Use predict_proba (Probability of response 1) and test your solution in hackathon’s website and capture result.
- Interpret Results
-Summarize your findings, model performance, and key insights into a final report. Compare models and explain which model were most impactful in predicting promotion and choose it as final model and pickle it for using them in API and UI.
- API Creation
-Create a FastAPI endpoint using the pickled final model.
- User Interface UI Development
-Create a Web App User Interface with the pickled final model using Streamlit library.
- Deploy API using GCP
-Create a new repository in your personal github account and push all the required files (python files, Docker files, Requirements file, pickle file, etc.) and deploy them using GCP for public use and share the URL links.
- Deploy WebApp using GCP or Streamlit
-Create a new repository in your personal github account and push the required files (python files, Docker files, Requirements file, pickle file,
 
-etc.) and deploy them using GCP or Streamlit for public use and share the
-respective URL links.
- PowerPoint Presentation
-Prepare a PowerPoint presentation having all the steps performed along with summarizing the problem, approach, findings, recommendations and deployed links.
- Recorded Demo
-Record a brief demo (5 minutes) walking through your code, explaining your methodology, and showcasing results.
+The Customer Dataset is sourced from the hackathon site. It contains customer details along with their vehicle and policy information. The dataset includes the following features:
+
+- **Customer ID**: Unique identifier for each customer  
+- **Customer Demographics**: Age, gender, region, etc.  
+- **Vehicle Details**: Vehicle age, damage, etc.  
+- **Policy Details**: Premium, sourcing channel, etc.  
+- **Response**: Target variable indicating whether the customer is interested in the policy or not.  
+
+## Step-by-Step Instructions
+
+### 1. Data Understanding and Observations
+- Import Libraries  
+- Load Data  
+- Initial Exploration  
+
+### 2. Exploratory Data Analysis (EDA)
+- Visualize Distributions  
+- Univariate Analysis  
+- Bivariate Analysis  
+
+### 3. Data Cleaning
+- Check and handle missing values  
+- Outlier Detection  
+- Convert data types (if necessary)  
+
+### 4. Feature Engineering
+- Encoding categorical data  
+- Feature scaling for numerical data  
+- Create new features from existing columns  
+
+### 5. Model Building
+- Train-Test Split  
+- Modeling using Pipelining  
+- Ensemble Techniques  
+- Model Training and Prediction  
+
+### 6. Model Evaluation and Tuning
+- Evaluate model performance using **roc_auc_score**  
+- Optimize model by Hyperparameter Tuning (GridSearch or other methods)  
+- Compare different models  
+
+### 7. Evaluate Test Solution
+- Use `predict_proba` (Probability of response = 1)  
+- Test the solution on the hackathon website and capture the result  
+
+### 8. Interpret Results
+- Summarize findings, model performance, and key insights in a final report  
+- Compare models and explain which model was most impactful in predicting customer interest  
+- Choose the final model and **pickle it** for API and UI usage  
+
+### 9. API Creation
+- Create a **FastAPI** endpoint using the pickled final model  
+
+### 10. User Interface (UI) Development
+- Develop a **Web App** user interface with the pickled final model using **Streamlit**  
+
+### 11. Deploy API Using GCP
+- Create a new **GitHub repository** and push all required files (Python files, Docker files, requirements.txt, pickle file, etc.)  
+- Deploy the API on **Google Cloud Platform (GCP)** for public use  
+- Share the deployed API URL  
+
+### 12. Deploy Web App Using GCP or Streamlit
+- Create a new **GitHub repository** and push all required files  
+- Deploy the web app using **GCP or Streamlit**  
+- Share the public URL of the deployed web app  
+
+### 13. PowerPoint Presentation
+- Prepare a **PowerPoint presentation** summarizing:
+  - Problem statement  
+  - Approach  
+  - Findings  
+  - Recommendations  
+  - Deployed links  
+
+### 14. Recorded Demo
+- Record a **5-minute demo** showcasing:
+  - Code walkthrough  
+  - Methodology explanation  
+  - Results demonstration  
+
+---
+
+This structured approach ensures a complete workflow from data analysis to deployment and presentation. 🚀
+
